@@ -25,11 +25,11 @@ def index():
     return render_template('/index.html')
 
 
-@app.route('/scrape', methods=['POST', 'GET'])
-def home():
-    msg = "Process started!! Your File will be downloaded in a few minutes"
+# @app.route('/scrape', methods=['POST', 'GET'])
+# def home():
+#     msg = "Process started!! Your File will be downloaded in a few minutes"
 
-    return render_template('boost.html', prediction_text='{}'.format(msg))
+#     return render_template('boost.html', prediction_text='{}'.format(msg))
 
 @app.route('/scrape_result',methods=['POST', "GET"])
 def predict():
@@ -38,6 +38,7 @@ def predict():
     '''
     main()
     x = "Done"
+    
     return x
 
 
